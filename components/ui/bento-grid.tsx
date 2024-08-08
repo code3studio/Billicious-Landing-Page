@@ -68,7 +68,7 @@ const BentoCard = ({
         </a>
       </Button>
     </div>
-    <div className="absolute inset-0 bottom-[-15rem] bg-gradient-to-t from-white to-transparent to-90% dark:from-black" />
+    <div className="absolute inset-0 bottom-[-15rem] bg-gradient-to-t from-white to-transparent to-90% group-hover:bottom-[-10rem] dark:from-black" />
   </div>
 );
 

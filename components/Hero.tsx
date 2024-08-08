@@ -13,9 +13,9 @@ const Hero = () => {
       <div className="backdrop-filter-[12px] group inline-flex h-7 translate-y-[-1rem] animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-muted px-3 text-sm text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black">
         <p
           style={{ "--shimmer-width": "100px" } as React.CSSProperties}
-          className="animate-shimmer mx-auto inline-flex max-w-md items-center justify-center bg-gradient-to-r from-neutral-100 via-black/80 via-50% to-neutral-100 bg-clip-text bg-no-repeat text-neutral-600/50 [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite] dark:from-neutral-900 dark:via-white/80 dark:to-neutral-900 dark:text-neutral-400/50"
+          className="mx-auto inline-flex max-w-md animate-shimmer items-center justify-center bg-gradient-to-r from-neutral-100 via-black/80 via-50% to-neutral-100 bg-clip-text bg-no-repeat text-neutral-600/50 [background-position:0_0] [background-size:var(--shimmer-width)_100%] [transition:background-position_1s_cubic-bezier(.6,.6,0,1)_infinite] dark:from-neutral-900 dark:via-white/80 dark:to-neutral-900 dark:text-neutral-400/50"
         >
-          <span className="text-sm">✨ Introducing Billicious</span>{" "}
+          <span className="text-xs md:text-sm">✨ Introducing Billicious</span>{" "}
           <svg
             width="15"
             height="15"
@@ -33,7 +33,7 @@ const Hero = () => {
           </svg>
         </p>
       </div>
-      <h1 className="translate-y-[-1rem] animate-fade-in text-balance bg-gradient-315 from-complementary to-primary bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-complementary dark:to-primary sm:text-6xl md:text-7xl lg:text-8xl">
+      <h1 className="translate-y-[-1rem] animate-fade-in text-balance bg-gradient-315 from-complementary to-primary bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-complementary dark:to-primary md:text-7xl lg:text-8xl">
         Split Bills Seamlessly, Anywhere, Anytime.
       </h1>
       <p className="mb-12 translate-y-[-1rem] animate-fade-in text-balance text-lg tracking-tight text-muted-foreground opacity-0 [--animation-delay:400ms] md:text-xl">
@@ -59,10 +59,9 @@ const Hero = () => {
         </div>
       </div>
       <Particles
-        className="absolute inset-0 left-0 top-[-20px] z-[-1] h-full w-full"
+        className="absolute inset-0 left-0 top-[-3rem] z-[-1] h-full w-full"
         staticity={80}
         ease={80}
-        refresh
         color="#34d399"
       />
     </section>

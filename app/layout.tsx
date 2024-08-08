@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
   title: "Billcious | Simplify the calculation of splitting group expenses",
   description:
     "Split your bills easily! Billicious is an open-source Webapp built for tracking debts and payments quickly",
+  applicationName: "Billicious",
 };
 
 export default function RootLayout({
@@ -38,7 +41,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="dark">{children}</body>
+      <body className="dark">
+        {children}
+        <SpeedInsights />
+        <Analytics />
+      </body>
     </html>
   );
 }
