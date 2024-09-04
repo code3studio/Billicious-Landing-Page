@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import ThemeProvider from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -40,7 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={GeistSans.className}>
+    <html
+      lang="en"
+      className={cn("custom-scrollbars scroll-smooth", GeistSans.className)}
+    >
       <body className="min-h-screen">
         <ThemeProvider
           attribute="class"

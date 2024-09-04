@@ -3,7 +3,7 @@
 import { cn, generateRandomPolygonPath } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
-import AnimatedGradientText from "./ui/anmated-gradient-text";
+import AnimatedGradientText from "./ui/animated-gradient-text";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -20,9 +20,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="relative text-center">
-      <div className="bg absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl">
+      <div className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl">
         <div
-          className="aspect-[1.7] h-full w-full bg-gradient-to-r from-primary to-white/10 opacity-50 lg:opacity-30"
+          className="animated-path aspect-[1.7] h-full w-full bg-gradient-to-r from-primary to-white/10 opacity-70 lg:opacity-50"
           style={{
             clipPath: `polygon(${polygonPath})`,
           }}
@@ -51,27 +51,6 @@ const Hero = () => {
           </a>
         </Button>
       </div>
-      {/* <div className="relative mt-[8rem] h-full w-full animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]">
-        <div className="rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:animate-image-glow before:opacity-0 before:[background-image:linear-gradient(to_bottom,#34d399,#34d399,transparent_40%)] before:[filter:blur(180px)]">
-          <BorderBeam colorFrom="#34d399" colorTo="#647eff" />
-          <img
-            src="/hero-dark.png"
-            alt="Hero Image"
-            className="relative hidden h-full w-full rounded-[inherit] border object-contain dark:block"
-          />
-          <img
-            src="/hero-light.png"
-            alt="Hero Image"
-            className="relative block h-full w-full rounded-[inherit] border object-contain dark:hidden"
-          />
-        </div>
-      </div>
-      <Particles
-        className="absolute inset-0 left-0 top-[-3rem] z-[-1] h-full w-full"
-        ease={80}
-        staticity={80}
-        color={theme == "dark" || theme == "system" ? "#34d399" : "#111827"}
-      /> */}
     </section>
   );
 };

@@ -6,8 +6,8 @@ import { FaGithub } from "react-icons/fa6";
 const Header = () => {
   return (
     <header className="sticky top-0 z-[75] flex h-[53px] w-full items-center border-b border-border bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <Mascot className="hidden h-[2.3rem] cursor-pointer md:block" />
-      <Logo className="ml-3 h-[2.3rem]" />
+      <Mascot className="h-8 cursor-pointer" />
+      <Logo className="ml-2 h-8" />
       <div className="ml-auto mr-2 flex place-items-center justify-center">
         <a
           target="_blank"

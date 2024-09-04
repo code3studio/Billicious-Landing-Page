@@ -11,7 +11,7 @@ const Footer = () => {
             className="flex items-center justify-center gap-2 md:justify-start"
             href="/"
           >
-            <Mascot className="hidden h-[2.3rem] cursor-pointer md:block" />
+            <Mascot className="hidden h-8 cursor-pointer md:block" />
             <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               Billicious
             </span>
