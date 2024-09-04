@@ -94,7 +94,7 @@ export function Features() {
   return (
     <section
       id="features"
-      className="mx-auto mt-28 max-w-[80rem] px-6 text-center text-muted-foreground md:px-8"
+      className="mx-auto max-w-[80rem] px-6 py-24 text-center text-muted-foreground sm:py-32 md:px-8"
     >
       <div className="mx-auto mb-12 flex max-w-5xl flex-col items-center justify-center gap-3 text-center lg:flex-row lg:items-end">
         <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-white sm:text-4xl">

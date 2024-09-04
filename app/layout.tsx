@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="min-h-screen overflow-x-hidden">
+      <body className="min-h-screen">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
