@@ -65,10 +65,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 ::selection {
   color: hsl(var(--primary-foreground));
   background: hsl(var(--primary)/0.4);

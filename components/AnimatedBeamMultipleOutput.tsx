@@ -1,9 +1,9 @@
 "use client";
 
 import { AnimatedBeam } from "@/components/ui/animated-beam";
+import Mascot from "@/components/ui/mascot";
 import { cn } from "@/lib/utils";
 import { IndianRupee, User } from "lucide-react";
-import Image from "next/image";
 import React, { forwardRef, useRef } from "react";
 
 const Circle = forwardRef<
@@ -55,7 +55,7 @@ export function AnimatedBeamMultipleOutput({
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16">
-            <Image src={"/mascot.svg"} alt={"mascot"} width={30} height={30} />
+            <Mascot className="size-[2.3rem]" />
           </Circle>
         </div>
         <div className="flex flex-col justify-center gap-2">

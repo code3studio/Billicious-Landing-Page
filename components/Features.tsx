@@ -14,7 +14,7 @@ const features = [
     Icon: ReceiptText,
     name: "Expense Tracking",
     description: "Keep track of all your shared expenses in one place.",
-    href: "/",
+    href: "https://app-billicious.vercel.app",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: <RetroGrid />,
@@ -24,7 +24,7 @@ const features = [
     name: "Automated Splitting",
     description:
       "Automatically calculate each person's share, including tips and taxes.",
-    href: "/",
+    href: "https://app-billicious.vercel.app",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -38,7 +38,7 @@ const features = [
     Icon: Globe,
     name: "Multilingual",
     description: "Supports multiple Currencies.",
-    href: "/",
+    href: "https://app-billicious.vercel.app",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -59,7 +59,7 @@ const features = [
     name: "Group Payments",
     description:
       "Easily collect payments from friends and family with integrated payment options.",
-    href: "/",
+    href: "https://app-billicious.vercel.app",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -97,7 +97,7 @@ export function Features() {
       className="mx-auto mt-28 max-w-[80rem] px-6 text-center text-muted-foreground md:px-8"
     >
       <div className="mx-auto mb-12 flex max-w-5xl flex-col items-center justify-center gap-3 text-center lg:flex-row lg:items-end">
-        <h1 className="text-3xl font-semibold tracking-tight text-black text-secondary dark:text-white sm:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-white sm:text-4xl">
           What's in Billicious?
         </h1>
         <p className="text-xl leading-8 text-muted-foreground">

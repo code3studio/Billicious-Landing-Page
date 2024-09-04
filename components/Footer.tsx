@@ -1,6 +1,6 @@
+import Mascot from "@/components/ui/mascot";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { Heart } from "lucide-react";
-import Image from "next/image";
 import React from "react";
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             className="flex items-center justify-center gap-2 md:justify-start"
             href="/"
           >
-            <Image src={"/mascot.svg"} alt={"mascot"} width={25} height={25} />
+            <Mascot className="hidden h-[2.3rem] cursor-pointer md:block" />
             <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               Billicious
             </span>

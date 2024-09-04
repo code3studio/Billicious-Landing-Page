@@ -1,3 +1,4 @@
+import ThemeProvider from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GeistSans } from "geist/font/sans";
@@ -40,10 +41,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="dark">
-        {children}
-        <SpeedInsights />
-        <Analytics />
+      <body className="min-h-screen overflow-x-hidden">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <SpeedInsights />
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );
