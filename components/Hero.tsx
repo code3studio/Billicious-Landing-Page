@@ -22,7 +22,7 @@ const Hero = () => {
     <section id="hero" className="relative text-center">
       <div className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl">
         <div
-          className="animated-path aspect-[1.7] h-full w-full bg-gradient-to-r from-primary to-white/10 opacity-70 lg:opacity-50"
+          className="animated-path aspect-[1.7] h-full w-full bg-gradient-to-r from-primary to-white/10 opacity-90 md:opacity-60 lg:opacity-30"
           style={{
             clipPath: `polygon(${polygonPath})`,
           }}
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="z-50 mx-auto max-w-[80rem] px-6 py-24 sm:py-32 md:px-8 md:py-40">
         <AnimatedGradientText>
           🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-border" />{" "}
-          <span className="animate-gradient inline bg-gradient-to-r from-primary via-complementary to-primary bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
+          <span className="inline animate-gradient bg-gradient-to-r from-primary via-complementary to-primary bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent">
             Introducing Billicious
           </span>
         </AnimatedGradientText>

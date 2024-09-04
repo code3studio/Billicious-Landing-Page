@@ -33,6 +33,20 @@ export const metadata: Metadata = {
   description:
     "Split your bills easily! Billicious is an open-source Webapp built for tracking debts and payments quickly",
   applicationName: "Billicious",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon-light.png",
+        href: "/favicon-light.png",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon-dark.png",
+        href: "/favicon-dark.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
