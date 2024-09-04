@@ -55,7 +55,8 @@ const Hero = () => {
       <Particles
         className="absolute inset-0 left-0 top-[-3rem] z-[-1] h-full w-full"
         ease={80}
-        color={theme == "dark" ? "#34d399" : "#111827"}
+        staticity={80}
+        color={theme == "dark" || theme == "system" ? "#34d399" : "#111827"}
       />
     </section>
   );
