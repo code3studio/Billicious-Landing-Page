@@ -7,8 +7,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.DOMAIN!),
   title: {
-    default: "Billcious | Simplify Group Expense Splitting",
-    template: "%s | Billcious",
+    default: "Billicious | Simplify Group Expense Splitting",
+    template: "%s | Billicious",
   },
   description:
     "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: process.env.DOMAIN!,
-    title: "Billcious | Simplify Group Expense Splitting",
+    title: "Billicious | Simplify Group Expense Splitting",
     description:
       "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
     siteName: "Billicious",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Billcious | Simplify Group Expense Splitting",
+    title: "Billicious | Simplify Group Expense Splitting",
     description:
       "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
     images: ["/twitter-image.png"],
