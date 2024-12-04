@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.DOMAIN!),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN!),
   title: {
     default: "Billicious | Simplify Group Expense Splitting",
     template: "%s | Billicious",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.DOMAIN!,
+    url: process.env.NEXT_PUBLIC_DOMAIN!,
     title: "Billicious | Simplify Group Expense Splitting",
     description:
       "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     images: ["/twitter-image.png"],
   },
   alternates: {
-    canonical: process.env.DOMAIN!,
+    canonical: process.env.NEXT_PUBLIC_DOMAIN!,
   },
   category: "Finance",
   generator: "Next.js",

@@ -4,6 +4,7 @@ import { generateRandomPolygonPath } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { AnimatedBeamMultipleOutput } from "./AnimatedBeamMultipleOutput";
 import AnimatedGradientText from "./ui/animated-gradient-text";
 import { Button } from "./ui/button";
 
@@ -47,12 +48,13 @@ const Hero = () => {
         </p>
         <Button asChild>
           <Link
-            href={process.env.NEXT_PUBLIC_DOMAIN!}
+            href={process.env.NEXT_PUBLIC_APP_DOMAIN!}
             className="flex items-center"
           >
             Get Started for free <ArrowRightIcon className="ml-2 h-4 w-4" />
           </Link>
         </Button>
+        {/* <AnimatedBeamMultipleOutput /> */}
       </div>
     </section>
   );

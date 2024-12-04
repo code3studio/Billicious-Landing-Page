@@ -42,12 +42,12 @@ export function AnimatedBeamMultipleOutput({
   return (
     <div
       className={cn(
-        "relative flex h-[500px] w-full items-center justify-center overflow-hidden rounded-lg border bg-background p-10 md:shadow-xl",
+        "relative flex h-full w-full items-center justify-center overflow-hidden",
         className,
       )}
       ref={containerRef}
     >
-      <div className="flex size-full max-w-lg flex-row items-stretch justify-between gap-10">
+      <div className="flex size-full flex-row items-stretch justify-between gap-20">
         <div className="flex flex-col justify-center">
           <Circle ref={div7Ref}>
             <IndianRupee />
@@ -58,7 +58,7 @@ export function AnimatedBeamMultipleOutput({
             <Mascot className="size-[2.3rem]" />
           </Circle>
         </div>
-        <div className="flex flex-col justify-center gap-2">
+        <div className="flex flex-col justify-center gap-10">
           <Circle ref={div1Ref}>
             <User />
           </Circle>
@@ -84,7 +84,9 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div1Ref}
         toRef={div6Ref}
-        duration={3}
+        curvature={-150}
+        endYOffset={-10}
+        // duration={5}
       />
       <AnimatedBeam
         gradientStartColor="#34d399"
@@ -92,7 +94,9 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div2Ref}
         toRef={div6Ref}
-        duration={3}
+        curvature={-100}
+        endYOffset={-10}
+        // duration={5}
       />
       <AnimatedBeam
         gradientStartColor="#34d399"
@@ -100,7 +104,8 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div3Ref}
         toRef={div6Ref}
-        duration={3}
+        endYOffset={-10}
+        // duration={5}
       />
       <AnimatedBeam
         gradientStartColor="#34d399"
@@ -108,7 +113,9 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div4Ref}
         toRef={div6Ref}
-        duration={3}
+        curvature={100}
+        endYOffset={-10}
+        // duration={5}
       />
       <AnimatedBeam
         gradientStartColor="#34d399"
@@ -116,7 +123,9 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div5Ref}
         toRef={div6Ref}
-        duration={3}
+        curvature={150}
+        endYOffset={-10}
+        // duration={5}
       />
       <AnimatedBeam
         gradientStartColor="#34d399"
@@ -124,7 +133,8 @@ export function AnimatedBeamMultipleOutput({
         containerRef={containerRef}
         fromRef={div6Ref}
         toRef={div7Ref}
-        duration={3}
+        endYOffset={10}
+        // duration={5}
       />
     </div>
   );

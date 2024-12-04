@@ -15,7 +15,7 @@ const features = [
     Icon: ReceiptText,
     name: "Expense Tracking",
     description: "Keep track of all your shared expenses in one place.",
-    href: process.env.NEXT_PUBLIC_DOMAIN!,
+    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: <RetroGrid />,
@@ -25,7 +25,7 @@ const features = [
     name: "Automated Splitting",
     description:
       "Automatically calculate each person's share, including tips and taxes.",
-    href: process.env.NEXT_PUBLIC_DOMAIN!,
+    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -43,7 +43,7 @@ const features = [
     Icon: Globe,
     name: "Multilingual",
     description: "Supports multiple Currencies.",
-    href: process.env.NEXT_PUBLIC_DOMAIN!,
+    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -64,7 +64,7 @@ const features = [
     name: "Group Payments",
     description:
       "Easily collect payments from friends and family with integrated payment options.",
-    href: process.env.NEXT_PUBLIC_DOMAIN!,
+    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (

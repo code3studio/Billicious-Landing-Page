@@ -82,7 +82,7 @@ const Footer = () => {
           </Link>
           <Link
             className="fill-muted-foreground text-muted-foreground hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
-            href="https://github.com/Alchemist-Alliance"
+            href="https://github.com/Alchemist-Alliance/Billicious"
           >
             <FaGithub className="size-6" />
             <span className="sr-only">Github</span>
