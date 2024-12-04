@@ -1,5 +1,6 @@
 import Mascot from "@/components/ui/mascot";
 import { Heart } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 import { FaGithub, FaTelegram } from "react-icons/fa6";
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
     <footer className="mx-auto flex max-w-[80rem] flex-col gap-10 px-6 pt-20 md:px-8 lg:pt-24 xl:pb-2">
       <div className="flex flex-col items-center gap-10 text-center md:flex-row md:justify-between md:gap-4 md:text-left">
         <div className="flex flex-col gap-4">
-          <a
+          <Link
             className="flex items-center justify-center gap-2 md:justify-start"
             href="/"
           >
@@ -15,7 +16,7 @@ const Footer = () => {
             <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
               Billicious
             </span>
-          </a>
+          </Link>
           <p className="max-w-xs">
             Simplify expenses with our app—quick, easy, and stress-free bill
             splitting.
@@ -28,20 +29,20 @@ const Footer = () => {
             </h2>
             <ul className="grid gap-2">
               <li>
-                <a
+                <Link
                   className="cursor-pointer text-sm font-[450] text-gray-400 duration-200 hover:text-gray-200"
                   href="https://t.me/lulu786"
                 >
                   Telegram
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="cursor-pointer text-sm font-[450] text-gray-400 duration-200 hover:text-gray-200"
                   href="https://github.com/Alchemist-Alliance"
                 >
                   Github
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -51,20 +52,20 @@ const Footer = () => {
             </h2>
             <ul className="grid gap-2">
               <li>
-                <a
+                <Link
                   className="cursor-pointer text-sm font-[450] text-gray-400 duration-200 hover:text-gray-200"
                   href="/terms"
                 >
                   Terms
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="cursor-pointer text-sm font-[450] text-gray-400 duration-200 hover:text-gray-200"
                   href="/privacy"
                 >
                   Privacy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -72,20 +73,20 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center justify-between gap-5 rounded-md py-4 md:flex-row">
         <div className="flex space-x-3 sm:mt-0 sm:justify-center">
-          <a
+          <Link
             className="fill-muted-foreground text-muted-foreground hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
             href="https://t.me/lulu786"
           >
             <FaTelegram className="size-6" />
             <span className="sr-only">Telegram</span>
-          </a>
-          <a
+          </Link>
+          <Link
             className="fill-muted-foreground text-muted-foreground hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
             href="https://github.com/Alchemist-Alliance"
           >
             <FaGithub className="size-6" />
             <span className="sr-only">Github</span>
-          </a>
+          </Link>
         </div>
         <span className="flex items-center gap-[0.3rem] text-sm text-muted-foreground">
           Made with <Heart fill="#bf616a" strokeWidth={0} className="h-4 w-4" />{" "}

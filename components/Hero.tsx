@@ -1,13 +1,16 @@
 "use client";
 
-import { cn, generateRandomPolygonPath } from "@/lib/utils";
+import { generateRandomPolygonPath } from "@/lib/utils";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import AnimatedGradientText from "./ui/animated-gradient-text";
 import { Button } from "./ui/button";
 
 const Hero = () => {
-  const [polygonPath, setPolygonPath] = useState(generateRandomPolygonPath());
+  const [polygonPath, setPolygonPath] = useState(
+    "1.93716% 20.7686%, 35.5488% 41.4208%, 55.0957% 35.5006%, 24.6226% 44.8119%, 71.0606% 63.4242%, 74.4139% 61.7434%, 70.1957% 61.5357%, 34.8165% 65.0704%, 31.6652% 72.6421%, 60.0481% 28.8503%, -8.55071% 67.7025%, 59.0976% 87.9395%, 84.2295% 14.6248%, 40.8987% 48.0481%, 3.04948% 51.441%, 102.961% 52.8397%",
+  );
   useEffect(() => {
     const pathTimer = setTimeout(
       () => setPolygonPath(generateRandomPolygonPath()),
@@ -42,13 +45,13 @@ const Hero = () => {
           Simplify expenses with our app—quick, easy, and stress-free bill
           splitting.
         </p>
-        <Button>
-          <a
-            href="https://app-billicious.vercel.app"
+        <Button asChild>
+          <Link
+            href={process.env.NEXT_PUBLIC_DOMAIN!}
             className="flex items-center"
           >
             Get Started for free <ArrowRightIcon className="ml-2 h-4 w-4" />
-          </a>
+          </Link>
         </Button>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { AnimatedBeamMultipleOutput } from "./AnimatedBeamMultipleOutput";
 import AnimatedGridPattern from "./ui/animated-grid-pattern";
 import { BackgroundBeams } from "./ui/background-beams";
 import DotPattern from "./ui/dot-pattern";
+import FlickeringGrid from "./ui/flikering-grid";
 import GridPattern from "./ui/grid-pattern";
 import Meteors from "./ui/meteros";
 import RetroGrid from "./ui/retro-grid";
@@ -14,7 +15,7 @@ const features = [
     Icon: ReceiptText,
     name: "Expense Tracking",
     description: "Keep track of all your shared expenses in one place.",
-    href: "https://app-billicious.vercel.app",
+    href: process.env.NEXT_PUBLIC_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: <RetroGrid />,
@@ -24,21 +25,25 @@ const features = [
     name: "Automated Splitting",
     description:
       "Automatically calculate each person's share, including tips and taxes.",
-    href: "https://app-billicious.vercel.app",
+    href: process.env.NEXT_PUBLIC_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <div>
-        <BackgroundBeams className="absolute z-[2]" />
-        <AnimatedBeamMultipleOutput className="absolute right-[-4rem] top-4 h-[300px] w-[600px] scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 md:right-2 md:scale-90 lg:scale-100" />
-      </div>
+      <FlickeringGrid
+        className="absolute inset-0 z-0 size-full"
+        squareSize={4}
+        gridGap={6}
+        color="#6B7280"
+        maxOpacity={0.5}
+        flickerChance={0.1}
+      />
     ),
   },
   {
     Icon: Globe,
     name: "Multilingual",
     description: "Supports multiple Currencies.",
-    href: "https://app-billicious.vercel.app",
+    href: process.env.NEXT_PUBLIC_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -59,7 +64,7 @@ const features = [
     name: "Group Payments",
     description:
       "Easily collect payments from friends and family with integrated payment options.",
-    href: "https://app-billicious.vercel.app",
+    href: process.env.NEXT_PUBLIC_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
