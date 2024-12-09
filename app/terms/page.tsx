@@ -70,7 +70,7 @@ const TermsPage = () => {
         <div className="space-y-6">
           <h2 className="text-2xl font-bold">6. Contact Us</h2>
           <p className="text-muted-foreground">
-            If you have any questions about these Terms, please contact us at
+            If you have any questions about these Terms, please contact us at{" "}
             <Link
               className="text-primary duration-200 hover:text-foreground"
               href="https://t.me/lulu786"
