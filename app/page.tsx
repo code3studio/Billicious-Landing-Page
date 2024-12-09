@@ -6,14 +6,10 @@ import React from "react";
 
 const Page = () => {
   return (
-    <>
-      <Header />
-      <main className="flex flex-col">
-        <Hero />
-        <Features />
-      </main>
-      <Footer />
-    </>
+    <main className="flex flex-col">
+      <Hero />
+      <Features />
+    </main>
   );
 };
 

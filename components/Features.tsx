@@ -1,10 +1,7 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { cn } from "@/lib/utils";
-import { Calculator, Globe, ReceiptText, Users } from "lucide-react";
-import { AnimatedBeamMultipleOutput } from "./AnimatedBeamMultipleOutput";
+import { Calculator, Globe, Users, Zap } from "lucide-react";
 import AnimatedGridPattern from "./ui/animated-grid-pattern";
-import { BackgroundBeams } from "./ui/background-beams";
-import DotPattern from "./ui/dot-pattern";
 import FlickeringGrid from "./ui/flikering-grid";
 import GridPattern from "./ui/grid-pattern";
 import Meteors from "./ui/meteros";
@@ -12,9 +9,10 @@ import RetroGrid from "./ui/retro-grid";
 
 const features = [
   {
-    Icon: ReceiptText,
-    name: "Expense Tracking",
-    description: "Keep track of all your shared expenses in one place.",
+    Icon: Users,
+    name: "Temporary Users",
+    description: "Map expenses for users not yet signed up.",
+
     href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
@@ -22,9 +20,8 @@ const features = [
   },
   {
     Icon: Calculator,
-    name: "Automated Splitting",
-    description:
-      "Automatically calculate each person's share, including tips and taxes.",
+    name: "Expense Tracking",
+    description: "Keep track of all your shared expenses in one place.",
     href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -60,10 +57,9 @@ const features = [
     ),
   },
   {
-    Icon: Users,
-    name: "Group Payments",
-    description:
-      "Easily collect payments from friends and family with integrated payment options.",
+    Icon: Zap,
+    name: "Beautiful UI",
+    description: "Clean and beautiful user interface.",
     href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",

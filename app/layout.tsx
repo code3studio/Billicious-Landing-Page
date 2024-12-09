@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
 import ThemeProvider from "@/providers/theme-provider";
 import { GeistSans } from "geist/font/sans";
@@ -95,7 +97,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

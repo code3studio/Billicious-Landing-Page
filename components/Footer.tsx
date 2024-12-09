@@ -39,7 +39,7 @@ const Footer = () => {
               <li>
                 <Link
                   className="cursor-pointer text-sm font-[450] text-gray-400 duration-200 hover:text-gray-200"
-                  href="https://github.com/Alchemist-Alliance"
+                  href="https://github.com/BioHazard786"
                 >
                   Github
                 </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-medium uppercase tracking-tighter text-gray-900 dark:text-white">
+            <h2 className="mb-6 text-sm font-medium uppercase tracking-tighter text-gray-900 duration-200 dark:text-white">
               Legal
             </h2>
             <ul className="grid gap-2">
@@ -74,15 +74,15 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-between gap-5 rounded-md py-4 md:flex-row">
         <div className="flex space-x-3 sm:mt-0 sm:justify-center">
           <Link
-            className="fill-muted-foreground text-muted-foreground hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
+            className="fill-muted-foreground text-muted-foreground duration-200 hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
             href="https://t.me/lulu786"
           >
             <FaTelegram className="size-6" />
             <span className="sr-only">Telegram</span>
           </Link>
           <Link
-            className="fill-muted-foreground text-muted-foreground hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
-            href="https://github.com/Alchemist-Alliance/Billicious"
+            className="fill-muted-foreground text-muted-foreground duration-200 hover:fill-gray-900 hover:text-gray-900 dark:hover:fill-gray-600 dark:hover:text-gray-600"
+            href="https://github.com/BioHazard786/Billicious"
           >
             <FaGithub className="size-6" />
             <span className="sr-only">Github</span>
