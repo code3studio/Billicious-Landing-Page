@@ -100,7 +100,11 @@ export function Features() {
 
       <BentoGrid className="lg:grid-rows-2">
         {features.map((feature) => (
-          <BentoCard href={""} cta={""} key={feature.name} {...feature} />
+          <BentoCard 
+            key={feature.name} 
+            {...feature} 
+            className={`${feature.className} cursor-default`} // Prevent pointer cursor
+          />
         ))}
       </BentoGrid>
     </section>
