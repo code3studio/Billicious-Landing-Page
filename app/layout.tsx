@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN!),
+  metadataBase: new URL("https://www.pumpvolt.fun"),
   title: {
     default: "PumpVolt | AI Meets pump.fun",
     template: "%s | PumpVolt",
@@ -28,7 +28,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_DOMAIN!,
     title: "PumpVolt | AI Meets Pump.Fun",
     description:
       "Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.",
@@ -49,9 +48,7 @@ export const metadata: Metadata = {
       "Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.",
     images: ["/twitter-image.png"],
   },
-  alternates: {
-    canonical: process.env.NEXT_PUBLIC_DOMAIN!,
-  },
+
   category: "Finance",
   generator: "Next.js",
 };
