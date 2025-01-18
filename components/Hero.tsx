@@ -51,15 +51,16 @@ const Hero = () => {
   Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.
 </p>
 <Button asChild>
-<Link
-  href="https://app.pumpvolt.fun/#dashboard"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center"
->
-  Explore Features Now <ArrowRightIcon className="ml-2 h-4 w-4" />
-</Link>
+  <a
+    href="https://app.pumpvolt.fun/#dashboard"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center"
+  >
+    Explore Features Now <ArrowRightIcon className="ml-2 h-4 w-4" />
+  </a>
 </Button>
+
 
         {/* <AnimatedBeamMultipleOutput /> */}
       </div>
