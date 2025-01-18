@@ -52,7 +52,7 @@ const Hero = () => {
 </p>
 <Button asChild>
   <a
-    href="https://app.pumpvolt.fun/#dashboard"
+    href="https://app.pumpvolt.fun/"
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center"
