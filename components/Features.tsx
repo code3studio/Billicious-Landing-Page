@@ -1,6 +1,6 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { cn } from "@/lib/utils";
-import { Calculator, Globe, Users, Zap } from "lucide-react";
+import { BrainCircuit, Lock, TrendingUp, LayoutDashboard } from "lucide-react";
 import AnimatedGridPattern from "./ui/animated-grid-pattern";
 import FlickeringGrid from "./ui/flikering-grid";
 import GridPattern from "./ui/grid-pattern";
@@ -9,21 +9,16 @@ import RetroGrid from "./ui/retro-grid";
 
 const features = [
   {
-    Icon: Users,
-    name: "Temporary Users",
-    description: "Map expenses for users not yet signed up.",
-
-    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
-    cta: "Learn more",
+    Icon: BrainCircuit,
+    name: "AI-Based Operation Panel",
+    description: "Leverage AI-powered tools for streamlined operation and enhanced decision-making.",
     className: "col-span-3 lg:col-span-1",
     background: <RetroGrid />,
   },
   {
-    Icon: Calculator,
-    name: "Expense Tracking",
-    description: "Keep track of all your shared expenses in one place.",
-    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
-    cta: "Learn more",
+    Icon: Lock,
+    name: "Secure Wallet Management Functions",
+    description: "Ensure secure transactions and automated wallet funding with advanced encryption.",
     className: "col-span-3 lg:col-span-2",
     background: (
       <FlickeringGrid
@@ -37,11 +32,9 @@ const features = [
     ),
   },
   {
-    Icon: Globe,
-    name: "Multilingual",
-    description: "Supports multiple Currencies.",
-    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
-    cta: "Learn more",
+    Icon: TrendingUp,
+    name: "Advanced Pump.fun Bundler System",
+    description: "Optimize bundling operations while supporting multiple currencies and global compatibility.",
     className: "col-span-3 lg:col-span-2",
     background: (
       <AnimatedGridPattern
@@ -57,11 +50,9 @@ const features = [
     ),
   },
   {
-    Icon: Zap,
-    name: "Beautiful UI",
-    description: "Clean and beautiful user interface.",
-    href: process.env.NEXT_PUBLIC_APP_DOMAIN!,
-    cta: "Learn more",
+    Icon: LayoutDashboard,
+    name: "Dynamic Dashboard Interface",
+    description: "Access a cutting-edge dashboard with real-time analytics and customizable widgets.",
     className: "col-span-3 lg:col-span-1",
     background: (
       <div>
@@ -91,6 +82,7 @@ const features = [
   },
 ];
 
+
 export function Features() {
   return (
     <section
@@ -99,16 +91,16 @@ export function Features() {
     >
       <div className="mx-auto mb-12 flex max-w-5xl flex-col items-center justify-center gap-3 text-center lg:flex-row lg:items-end">
         <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-white sm:text-4xl">
-          What's in Billicious?
+          What's in PumpVolt?
         </h1>
         <p className="text-xl leading-8 text-muted-foreground">
-          Everything you need to do Bill Splitting.
+          Everything you need to know to launch on Pump.fun
         </p>
       </div>
 
       <BentoGrid className="lg:grid-rows-2">
         {features.map((feature) => (
-          <BentoCard key={feature.name} {...feature} />
+          <BentoCard href={""} cta={""} key={feature.name} {...feature} />
         ))}
       </BentoGrid>
     </section>

@@ -42,34 +42,25 @@ const Hero = () => {
             Introducing Billicious
           </span>
         </AnimatedGradientText> */}
-        <Link
-          href="https://www.producthunt.com/posts/billicious?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-billicious"
-          target="_blank"
-          className="flex items-center justify-center"
-        >
-          <Image
-            src={`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=694333&theme=${theme === "system" || theme === undefined ? "neutral" : theme}`}
-            alt="Billicious - Simplify&#0032;group&#0032;expense&#0032;splitting | Product Hunt"
-            width={250}
-            height={54}
-            className="scale-75"
-          />
-        </Link>
-        <h1 className="translate-y-[-1rem] animate-fade-in text-balance bg-gradient-315 from-complementary to-primary bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-complementary dark:to-primary md:text-7xl lg:text-8xl">
-          Split Bills Seamlessly, Anywhere, Anytime.
-        </h1>
-        <p className="mb-12 translate-y-[-1rem] animate-fade-in text-balance text-lg tracking-tight text-muted-foreground opacity-0 [--animation-delay:400ms] md:text-xl">
-          Simplify expenses with our app—quick, easy, and stress-free bill
-          splitting.
-        </p>
-        <Button asChild>
-          <Link
-            href={process.env.NEXT_PUBLIC_APP_DOMAIN!}
-            className="flex items-center"
-          >
-            Get Started for free <ArrowRightIcon className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
+     
+     <h1 className="translate-y-[-1rem] animate-fade-in text-balance bg-gradient-315 from-complementary to-primary bg-clip-text py-6 text-5xl font-semibold leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-complementary dark:to-primary md:text-7xl lg:text-8xl">
+  PumpVolt: <br />
+  <span>AI Meets Pump.fun</span>
+</h1>
+<p className="mb-12 translate-y-[-1rem] animate-fade-in text-balance text-lg tracking-tight text-muted-foreground opacity-0 [--animation-delay:400ms] md:text-xl">
+  Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.
+</p>
+<Button asChild>
+<Link
+  href="https://pumpvolt.fun/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center"
+>
+  Explore Features Now <ArrowRightIcon className="ml-2 h-4 w-4" />
+</Link>
+</Button>
+
         {/* <AnimatedBeamMultipleOutput /> */}
       </div>
     </section>

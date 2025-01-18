@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Info from "@/components/Info";
 import { cn } from "@/lib/utils";
 import ThemeProvider from "@/providers/theme-provider";
 import { GeistSans } from "geist/font/sans";
@@ -9,68 +10,43 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN!),
   title: {
-    default: "Billicious | Simplify Group Expense Splitting",
-    template: "%s | Billicious",
+    default: "PumpVolt | AI Meets pump.fun",
+    template: "%s | PumpVolt",
   },
   description:
-    "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
-  applicationName: "Billicious",
-  keywords: [
-    "Bill Splitting App",
-    "Split Bills Online",
-    "Expense Sharing",
-    "Group Payment Tool",
-    "Debt Tracker",
-    "Expense Management",
-    "Split Bills with Friends",
-    "Trip Expense Splitter",
-    "Roommate Bill Sharing",
-    "Group Finance Tracker",
-  ],
-  authors: [
-    {
-      name: "Mohd Zaid and Keshav Singh",
-      url: "https://github.com/BioHazard786",
-    },
-  ],
-  creator: "Mohd Zaid and Keshav Singh",
-  publisher: "Mohd Zaid and Keshav Singh",
+    "Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.",
+  applicationName: "PumpVolt",
+  keywords: [],
   icons: {
     icon: [
       {
-        media: "(prefers-color-scheme: light)",
-        url: "/favicon-light.png",
-        href: "/favicon-light.png",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/favicon-dark.png",
-        href: "/favicon-dark.png",
+        url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='14' font-size='16'%3E⚡%3C/text%3E%3C/svg%3E",
       },
     ],
   },
+  
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_DOMAIN!,
-    title: "Billicious | Simplify Group Expense Splitting",
+    title: "PumpVolt | AI Meets Pump.Fun",
     description:
-      "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
-    siteName: "Billicious",
+      "Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.",
+    siteName: "PumpVolt",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Billicious - Group Expense Splitting App",
+        alt: "PumpVolt | AI Meets Pump.Fun",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Billicious | Simplify Group Expense Splitting",
+    title: "PumpVolt | AI Meets Pump.Fun",
     description:
-      "Effortlessly split bills, track group expenses, and settle debts with our user-friendly open-source expense sharing app.",
+      "Experience seamless management with advanced dashboards, AI-assisted optimization, and secure wallet funding. The ultimate bundler platform for modern operations.",
     images: ["/twitter-image.png"],
   },
   alternates: {
@@ -99,9 +75,11 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Info /> {/* Add Info section here */}
           <Footer />
         </ThemeProvider>
       </body>
     </html>
   );
 }
+
